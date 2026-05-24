@@ -1,0 +1,14 @@
+# Ignorar nodos de dependencias
+node_modules/
+dist/
+.env
+
+# Archivos específicos del sistema o IDE
+.DS_Store
+.vscode/
+
+# Archivos de caché de Prisma
+backend/node_modules/
+frontend/node_modules/
+
+
