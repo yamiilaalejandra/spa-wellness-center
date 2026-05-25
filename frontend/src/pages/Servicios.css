@@ -1,0 +1,234 @@
+.servicios-hero {
+  background: linear-gradient(135deg, #6F7D5C 0%, #4F5B46 100%);
+  color: var(--white);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.servicios-hero h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.servicios-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicios-grid {
+  padding: 6rem 2rem;
+  background: var(--white);
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.service-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.service-card {
+  overflow: hidden;
+}
+
+.service-categoria {
+  background: var(--green-sage);
+  color: var(--white);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-card h3 {
+  color: var(--green-olive);
+  margin-bottom: 0.8rem;
+  margin-top: 0;
+}
+
+.service-descripcion {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.service-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.service-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid var(--beige-light);
+  padding-top: 1rem;
+}
+
+.service-precio {
+  font-family: var(--heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--brown-warm);
+}
+
+.btn-small {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   PACKAGES
+========================= */
+
+.packages {
+  padding: 6rem 2rem;
+}
+
+/* CARD */
+.package-card {
+  background: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--green-olive);
+}
+
+/* IMAGEN */
+.package-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+
+  /* puntas redondeadas arriba */
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+
+  transition: transform 0.5s ease;
+}
+
+/* efecto zoom suave */
+.package-card:hover .package-image {
+  transform: scale(1.05);
+}
+
+/* CONTENIDO */
+.package-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* TITULO */
+.package-card h3 {
+  color: var(--green-olive);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* TEXTO */
+.package-card p {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+/* PRECIO */
+.package-price {
+  font-family: var(--heading);
+  font-size: 2.2rem;
+  color: var(--brown-warm);
+  font-weight: 700;
+  margin: 1.5rem 0 !important;
+}
+
+/* BOTON */
+.package-card .btn {
+  width: 100%;
+  border-radius: 12px;
+  padding: 0.9rem;
+  font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .package-image {
+    height: 220px;
+  }
+
+  .package-content {
+    padding: 1.5rem;
+  }
+
+  .package-price {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .servicios-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .servicios-hero h1 {
+    font-size: 2rem;
+  }
+
+  .servicios-grid,
+  .packages {
+    padding: 3rem 1.5rem;
+  }
+
+  .service-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .service-footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn-small {
+    width: 100%;
+  }
+}

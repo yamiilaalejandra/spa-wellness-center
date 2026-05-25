@@ -1,0 +1,257 @@
+.nosotros-hero {
+  background: linear-gradient(135deg, #6F7D5C 0%, #4F5B46 100%);
+  color: var(--white);
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.nosotros-hero h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.nosotros-hero p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Historia */
+.historia {
+  padding: 6rem 2rem;
+  background: var(--white);
+}
+
+.historia-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.historia-text h2 {
+  color: var(--green-olive);
+  margin-bottom: 1.5rem;
+}
+
+.historia-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.9;
+}
+
+.historia-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box {
+  width: 300px;
+  height: 300px;
+  background: var(--beige-light);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  box-shadow: var(--shadow-medium);
+}
+
+/* Valores */
+.valores {
+  padding: 6rem 2rem;
+}
+
+.valor-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: all 0.4s ease;
+  border-top: 4px solid var(--green-olive);
+}
+
+.valor-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-5px);
+}
+
+.valor-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.valor-card h3 {
+  color: var(--green-olive);
+  margin-bottom: 0.8rem;
+}
+
+.valor-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Equipo */
+.equipo {
+  padding: 6rem 2rem;
+  background: var(--white);
+}
+
+.team-card {
+  background: var(--beige-light);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.team-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-5px);
+}
+
+.team-avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-card h3 {
+  color: var(--green-olive);
+  margin-bottom: 0.3rem;
+}
+
+.team-specialty {
+  color: var(--brown-warm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 1rem !important;
+}
+
+.team-bio {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem !important;
+  line-height: 1.8;
+}
+
+.team-card .btn-small {
+  width: 100%;
+}
+
+/* Beneficios */
+.why-us {
+  padding: 6rem 2rem;
+}
+
+.benefit-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.benefit-card:hover {
+  border-color: var(--green-olive);
+  box-shadow: var(--shadow-medium);
+}
+
+.benefit-card h3 {
+  color: var(--green-olive);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.benefit-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Galería */
+.galeria {
+  padding: 6rem 2rem;
+  background: var(--white);
+}
+
+.galeria h2 {
+  margin-bottom: 3rem;
+}
+
+.galeria-item {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.4s ease;
+}
+
+.galeria-item:hover {
+  box-shadow: var(--shadow-hover);
+  transform: scale(1.05);
+}
+
+.galeria-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #E9DFCF 0%, #F5EFE6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nosotros-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .nosotros-hero h1 {
+    font-size: 2rem;
+  }
+
+  .historia {
+    padding: 3rem 1.5rem;
+  }
+
+  .historia-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .image-box {
+    width: 200px;
+    height: 200px;
+    font-size: 2.5rem;
+  }
+
+  .valores,
+  .equipo,
+  .why-us,
+  .galeria {
+    padding: 3rem 1.5rem;
+  }
+
+  .team-avatar {
+    font-size: 3rem;
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,24 +1,39 @@
-.counter {
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: var(--accent);
-  background: var(--accent-bg);
-  border: 2px solid transparent;
-  transition: border-color 0.3s;
-  margin-bottom: 24px;
+main {
+  flex: 1;
+}
 
-  &:hover {
-    border-color: var(--accent-border);
+/* Asegurar que el Footer siempre está al final */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Suavidad en transiciones de páginas */
+@keyframes pageTransition {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  &:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.hero {
-  position: relative;
+main {
+  animation: pageTransition 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  main {
+    padding-top: 0;
+  }
 
   .base,
   .framework,

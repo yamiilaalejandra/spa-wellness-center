@@ -1,0 +1,231 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--beige-light) 0%, rgba(111, 125, 92, 0.05) 100%);
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.login-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  width: 100%;
+  align-items: center;
+}
+
+.login-content {
+  background: white;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.login-benefits {
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  animation: fadeInUp 0.6s ease-out 0.1s backwards;
+}
+
+.login-benefits h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: var(--green-olive);
+  margin-bottom: 10px;
+}
+
+.login-benefits > p {
+  font-size: 16px;
+  color: var(--green-sage);
+  margin-bottom: 30px;
+}
+
+.login-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.login-benefits li {
+  font-size: 16px;
+  color: var(--green-sage);
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.login-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.login-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: var(--green-olive);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.login-header p {
+  font-size: 16px;
+  color: var(--green-sage);
+}
+
+.login-form {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green-olive);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid var(--green-sage);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--blue-accent);
+  box-shadow: 0 0 0 4px rgba(69, 121, 183, 0.1);
+}
+
+.form-group input:disabled {
+  background: var(--beige-light);
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.error-message {
+  background: rgba(230, 100, 100, 0.1);
+  border: 2px solid #e66464;
+  color: #c23030;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.demo-section {
+  border-top: 1px solid var(--beige-main);
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.divider {
+  font-size: 13px;
+  color: var(--warm-brown);
+  margin-bottom: 15px;
+  position: relative;
+  padding: 0;
+}
+
+.demo-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  background: var(--beige-light);
+  color: var(--green-olive);
+  border: 2px solid var(--green-sage);
+}
+
+.demo-btn:hover:not(:disabled) {
+  background: var(--green-sage);
+  color: white;
+}
+
+.login-footer {
+  text-align: center;
+  border-top: 1px solid var(--beige-main);
+  padding-top: 20px;
+}
+
+.login-footer p {
+  font-size: 14px;
+  color: var(--warm-brown);
+}
+
+.login-footer a {
+  color: var(--green-olive);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+  color: var(--green-sage);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .login-content {
+    padding: 30px;
+    order: 2;
+  }
+
+  .login-benefits {
+    padding: 30px;
+    order: 1;
+  }
+
+  .login-header h1 {
+    font-size: 32px;
+  }
+
+  .login-benefits h2 {
+    font-size: 24px;
+  }
+
+  .login-benefits ul {
+    text-align: center;
+  }
+}
